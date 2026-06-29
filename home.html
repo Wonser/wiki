@@ -5,7 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <title>Home</title>
-  <link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+  }
+});
+</script>
+<link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="all">
 <link rel="stylesheet" href="assets/css/fancybox.min.css" media="all">
 <link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css" media="all">
@@ -145,6 +152,10 @@
             </a>
           </div>
         </div>
+        <div class="theme">
+          <img src="assets/img/dark.svg" alt="" class="theme__img svg">
+          <img src="assets/img/light.svg" alt="" class="theme__img svg">
+        </div>
       </div>
     </div>
   </div>
@@ -165,17 +176,19 @@
     <section class="hero-section section">
       <div class="container">
         <div class="hero">
-          <img src="assets/img/hero.webp" alt="" class="hero__img">
-          <div class="stories hero__stories">
-            <div class="stories-item"><img src="assets/img/stories1.webp" alt="story"></div>
-            <div class="stories-item"><img src="assets/img/stories2.webp" alt="story"></div>
-            <div class="stories-item"><img src="assets/img/stories3.webp" alt="story"></div>
-            <div class="stories-item"><img src="assets/img/stories4.webp" alt="story"></div>
+          <div class="hero__inner">
+            <img src="assets/img/hero.webp" alt="" class="hero__img">
+            <div class="stories hero__stories">
+              <div class="stories-item"><img src="assets/img/stories1.webp" alt="story"></div>
+              <div class="stories-item"><img src="assets/img/stories2.webp" alt="story"></div>
+              <div class="stories-item"><img src="assets/img/stories3.webp" alt="story"></div>
+              <div class="stories-item"><img src="assets/img/stories4.webp" alt="story"></div>
+            </div>
+            <h1 class="hero__title title">База знаний</h1>
+            <p class="hero__desc hint3 body-m">
+              Официальная база знаний сервера BAZA, где вы сможете найти ответы на все ваши вопросы
+            </p>
           </div>
-          <h1 class="hero__title title">База знаний</h1>
-          <p class="hero__desc hint3 body-m">
-            Официальная база знаний сервера BAZA, где вы сможете найти ответы на все ваши вопросы
-          </p>
           <div class="hero__servers servers-swiper swiper">
             <div class="swiper-arrow servers-swiper-prev">
               <img src="assets/img/angle-left.svg" alt="">
@@ -926,11 +939,11 @@
             </div>
             <div class="events-swiper__actions">
               <div class="swiper-arrow events-swiper-prev">
-                <img src="assets/img/angle-left.svg" alt="">
+                <img src="assets/img/angle-left.svg" class="svg" alt="">
               </div>
               <div class="swiper-pagination events-pagination"></div>
               <div class="swiper-arrow events-swiper-next">
-                <img src="assets/img/angle-right.svg" alt="">
+                <img src="assets/img/angle-right.svg" class="svg" alt="">
               </div>
             </div>
           </div>

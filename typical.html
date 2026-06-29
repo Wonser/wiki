@@ -5,7 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <title>Typical</title>
-  <link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+  }
+});
+</script>
+<link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="all">
 <link rel="stylesheet" href="assets/css/fancybox.min.css" media="all">
 <link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css" media="all">
@@ -144,6 +151,10 @@
               En
             </a>
           </div>
+        </div>
+        <div class="theme">
+          <img src="assets/img/dark.svg" alt="" class="theme__img svg">
+          <img src="assets/img/light.svg" alt="" class="theme__img svg">
         </div>
       </div>
     </div>
@@ -318,7 +329,7 @@
                   <div class="craft-box">
                     <div class="tag">5 шт</div>
                     <p class="body-l craft-box__title fw-600">Купон на Запечатанную Краску/ Усилитель Краски (Временно)</p>
-                    <p class="craft-box__desc hint3">с 4 февраля 2026 (10:00 МСК) до 4 марта 2026 (10:30 МСК)</p>
+                    <p class="craft-box__desc body-xs hint3">с 4 февраля 2026 (10:00 МСК) до 4 марта 2026 (10:30 МСК)</p>
                     <img src="assets/img/dwarf.webp" alt="">
                     <div class="craft-box__recipes">
                       <div class="craft-box__recipe">
@@ -356,7 +367,7 @@
                   <div class="craft-box">
                     <div class="tag">5 шт</div>
                     <p class="body-l craft-box__title fw-600">Купон на Запечатанную Краску/ Усилитель Краски (Временно)</p>
-                    <p class="craft-box__desc hint3">с 4 февраля 2026 (10:00 МСК) до 4 марта 2026 (10:30 МСК)</p>
+                    <p class="craft-box__desc body-xs hint3">с 4 февраля 2026 (10:00 МСК) до 4 марта 2026 (10:30 МСК)</p>
                     <img src="assets/img/dwarf.webp" alt="">
                     <div class="craft-box__recipes">
                       <div class="craft-box__recipe">
@@ -701,7 +712,7 @@
               <img src="assets/img/subscribe.svg" alt="">
               <p class="subscribe__title h6">Подпишитесь на наш Telegram-канал</p>
               <p class="subscribe__desc body-s hint3 fw-500">Чтобы не пропустить ничего важного</p>
-              <a href="#" class="btn btn_accent">Подписаться</a>
+              <a href="#" class="btn btn_accent"><span>Подписаться</span></a>
               <p class="body-xs hint3 fw-600">1.4k подписчиков</p>
             </div>
           </div>

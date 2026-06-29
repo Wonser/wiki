@@ -5,7 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <title>Streams</title>
-  <link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+  }
+});
+</script>
+<link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="all">
 <link rel="stylesheet" href="assets/css/fancybox.min.css" media="all">
 <link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css" media="all">
@@ -144,6 +151,10 @@
               En
             </a>
           </div>
+        </div>
+        <div class="theme">
+          <img src="assets/img/dark.svg" alt="" class="theme__img svg">
+          <img src="assets/img/light.svg" alt="" class="theme__img svg">
         </div>
       </div>
     </div>
