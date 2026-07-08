@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>Start</title>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+  }
+});
+</script>
+<link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="all">
+<link rel="stylesheet" href="assets/css/fancybox.min.css" media="all">
+<link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css" media="all">
+<link rel="stylesheet" href="assets/css/main.min.css" media="all">
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="container">
+    <div class="header-wrap">
+      <div class="header-item header-item_left">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.svg" alt="" class="logo-img">
+        </a>
+        <nav>
+          <ul class="menu body-s fw-600">
+            <li class="menu-item">
+              <a href="#">Концепция</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Стримеры</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a href="#">Еще</a>
+              <div class="dropdown__content">
+                <ul class="sub-menu">
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Новости и события</a>
+                  </li>
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Журнал изменений</a>
+                  </li>
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Медиа</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-btn">
+          <img src="assets/img/search.svg" alt="">
+        </div>
+        <a href="#" data-hystmodal="#menuModal" class="menu-btn body-s btn btn_border btn_icon-left">
+          <img src="assets/img/menu.svg" alt="">
+          <span>Меню</span>
+        </a>
+      </div>
+      <div class="header-actions">
+        <div class="header-actions__inner">
+          <div class="server dropdown">
+            <div class="server__head body-s">
+              <span>Vanilla</span>
+              <img src="assets/img/angle-down.svg" alt="">
+            </div>
+            <div class="server__content dropdown__content">
+              <a class="dropdown__item active">
+                Vanilla
+              </a>
+              <a class="dropdown__item">
+                Osaka
+              </a>
+              <a class="dropdown__item">
+                New
+              </a>
+            </div>
+          </div>
+          <form class="search-form body-s fw-500">
+            <input type="submit" value="" class="search-form__submit">
+            <input type="text" class="search-form__input" placeholder="Поиск по базе знаний">
+          </form>
+          <div class="hotkey hint">/</div>
+        </div>
+        <div class="search-close">
+          <img src="assets/img/close.svg" alt="">
+        </div>
+        <div class="search-box">
+          <div class="search-box-empty">
+            <p class="body-m fw-500 hint3">Ничего не найдено, попробуйте скорректировать запрос</p>
+          </div>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <img src="assets/img/result1.webp" alt="" class="search-box-item__img">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="header-item header-item_right">
+        <a href="#" class="btn btn_secondary">Кабинет</a>
+        <a href="#" class="btn btn_accent"><span>Начать играть</span></a>
+        <div class="lang dropdown">
+          <div class="lang__head btn btn_border btn_icon-left">
+            <img src="assets/img/lang.svg" alt="">
+            <span>Ru</span>
+          </div>
+          <div class="lang__content dropdown__content">
+            <a class="dropdown__item lang__item active">
+              Ru
+            </a>
+            <a class="dropdown__item lang__item">
+              En
+            </a>
+          </div>
+        </div>
+        <div class="theme">
+          <img src="assets/img/dark.svg" alt="" class="theme__img svg">
+          <img src="assets/img/light.svg" alt="" class="theme__img svg">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="hystmodal" id="menuModal" aria-hidden="true">
+  <div class="hystmodal__wrap menu-modal-wrap">
+    <div class="hystmodal__window menu-modal" role="dialog" aria-modal="true">
+      <div class="menu-track"></div>
+    </div>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-banner__wrap">
+    <p class="cookie-banner__title h5">Мы используем cookie</p>
+    <p class="cookie-banner__desc body-s hint3">Продолжая использовать сайт, вы даете <a href="#">согласие на обработку cookies.</a></p>
+    <div id="cookie-accept" class="btn btn_accent"><span>Хорошо</span></div>
+  </div>
+</div> 
+
+  <main>
+
+    <!-- hero -->
+    <section class="hero-section section">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__menu hero__menu_sticky">
+            <div class="menu-swiper swiper body-m">
+              <div class="swiper-arrow menu-swiper-prev">
+                <img src="assets/img/angle-left.svg" alt="">
+              </div>
+              <div class="swiper-wrapper category-menu fw-500">
+                <a href="#" class="swiper-slide menu-link">Предметы</a>
+                <a href="#" class="swiper-slide menu-link">Умения</a>
+                <a href="#" class="swiper-slide menu-link">Монстры и NPC</a>
+                <a href="#" class="swiper-slide menu-link">Локации</a>
+                <a href="#" class="swiper-slide menu-link">Механики</a>
+                <a href="#" class="swiper-slide menu-link">Статьи</a>
+                <a href="#" class="swiper-slide menu-link">Новости</a>
+                <a href="#" class="swiper-slide menu-link">Магазин L</a>
+                <a href="#" class="swiper-slide menu-link">Гайды</a>
+              </div>
+              <div class="swiper-arrow menu-swiper-next">
+                <img src="assets/img/angle-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="heading heading_space">
+            <div class="breadcrumbs body-s fw-500">
+              <a href="#" class="breacrumbs-item hint2">Главная</a>
+              <img src="assets/img/sep.svg" alt="">
+              <span class="breadcrumbs-item hint3">Начать играть</span>
+            </div>
+            <h1 class="heading__title h1">Начать играть</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start -->
+    <section class="start-section section">
+      <div class="container">
+        <div class="start">
+          <div class="start-item">
+            <div class="start-item__way">
+              <div class="start-item__circle">
+                <div class="start-item__count">1</div>
+                <img src="assets/img/start1.svg" alt="" class="start-item__icon svg">
+              </div>
+              <div class="start-item__line">
+                <div class="start-item__current-line"></div>
+              </div>
+            </div>
+            <div class="start-item__wrap">
+              <div class="start-item__left">
+                <p class="start-item__title h2">Регистрация</p>
+              </div>
+              <div class="start-item__right">
+                <p class="start-item__subtitle h3">Осталось несколько шагов и ты будешь на базе</p>
+                <a href="#" class="btn btn_accent">
+                  <span>Зарегистрировать мастер-аккаунт</span>
+                </a>
+                <p class="start-item__desc body-s fw-500 hint3">После регистрации в личном кабинете выбери нужный тебе сервер и создай игровой аккаунт.</p>
+              </div>
+            </div>
+          </div>
+          <div class="start-item">
+            <div class="start-item__way">
+              <div class="start-item__circle">
+                <div class="start-item__count">2</div>
+                <img src="assets/img/start2.svg" alt="" class="start-item__icon svg">
+              </div>
+              <div class="start-item__line">
+                <div class="start-item__current-line"></div>
+              </div>
+            </div>
+            <div class="start-item__wrap">
+              <div class="start-item__left">
+                <p class="start-item__title h2">Файлы</p>
+              </div>
+              <div class="start-item__right">
+                <div class="start-item__inner">
+                  <p class="start-item__subtitle h3">Скачай апдейтер</p>
+                  <p class="start-item__desc body-m fw-500 hint3">Скачай апдейтер и помести в пустую папку, после чего нажми кнопку Check Files, у тебя скачается клиент последней версии.</p>
+                </div>
+                <div class="start-item__btns">
+                  <a href="#" class="btn btn_accent">
+                    <span>Скачать с сервера</span>
+                  </a>
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/google-drive.svg" alt="">
+                    Google Drive
+                  </a>
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/disk.svg" alt="">
+                    Яндекс.Диск
+                  </a>
+                </div>
+                <p class="h6">Остались вопросы? Посмотри видео</p>
+                <a href="assets/img/video.mp4" data-fancybox class="start-item__video">
+                  <img src="assets/img/video.webp" alt="">
+                  <div class="start-item__play"></div>
+                </a>
+                <div class="start-item__inner">
+                  <p class="h6">Маленькая скорость при скачке через Лаунчер?</p>
+                  <p class="start-item__desc body-m fw-500 hint3">Скачай клиент напрямую:</p>
+                </div>
+                <div class="start-item__btns">
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/google-drive.svg" alt="">
+                    Google Drive
+                  </a>
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/disk.svg" alt="">
+                    Яндекс.Диск
+                  </a>
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/mega.svg" alt="">
+                    Mega
+                  </a>
+                  <a href="#" class="btn btn_light">
+                    <img src="assets/img/torrent.svg" alt="">
+                    μTorrent
+                  </a>
+                </div>
+                <p class="body-s fw-500">После скачивания и разархивирования клиента помести в него лаунчер и нажми проверку файлов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="start-item">
+            <div class="start-item__way">
+              <div class="start-item__circle">
+                <div class="start-item__count">3</div>
+                <img src="assets/img/start3.svg" alt="" class="start-item__icon svg">
+              </div>
+              <div class="start-item__line">
+                <div class="start-item__current-line"></div>
+              </div>
+            </div>
+            <div class="start-item__wrap">
+              <div class="start-item__left">
+                <p class="start-item__title h2">Помощь</p>
+              </div>
+              <div class="start-item__right">
+                <div class="start-item__inner start-item__inner_center start-item__inner_line">
+                  <p class="start-item__title h3">Ты можешь задать свой вопрос в нашем сообществе</p>
+                  <p class="start-item__desc body-m fw-500 hint3">Наше большое сообщество часто отвечает быстрее чем служба поддержки.</p>
+                  <div class="start-item__btns">
+                    <a href="#" class="btn btn-discord">
+                      <img src="assets/img/dc.svg" alt="">
+                      Discord
+                    </a>
+                    <a href="#" class="btn btn-telegram">
+                      <img src="assets/img/tg-2.svg" alt="">
+                      Telegram
+                    </a>
+                  </div>
+                </div>
+                <div class="start-item__inner start-item__inner_center">
+                  <p class="start-item__desc body-m fw-500 hint3">Если проблема требует вмешательства поддержки, напиши нам подробно, что произошло. В одном сообщении укажи e-mail мастер-аккаунта и ник персонажа — так  мы  сможем помочь быстрее.</p>
+                  <div class="start-item__btns">
+                    <a href="#" class="btn btn-discord btn-discord_2">
+                      <img src="assets/img/dc2.svg" alt="">
+                      Discord
+                    </a>
+                    <a href="#" class="btn btn-telegram btn-telegram_2">
+                      <img src="assets/img/tg.svg" alt="">
+                      Telegram
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="start-item">
+            <div class="start-item__way">
+              <div class="start-item__circle">
+                <div class="start-item__count">4</div>
+                <img src="assets/img/start4.svg" alt="" class="start-item__icon svg">
+              </div>
+              <div class="start-item__line">
+                <div class="start-item__current-line"></div>
+              </div>
+            </div>
+            <div class="start-item__wrap">
+              <div class="start-item__left">
+                <p class="start-item__title h2">Часто задаваемые вопросы</p>
+              </div>
+              <div class="start-item__right  start-item__right_transparent default-content">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    <p class="accordion__title fw-600">У меня ошибка LCID?</p>
+                    <img src="assets/img/angle-down.svg" alt="">
+                  </div>
+                  <div class="accordion__content">
+                    <div class="default-content">
+                      <p class="hint3">
+                        В Эльморадене начинается Фестиваль Тортиков, но праздник оказался под угрозой. Бездушные монстры растащили шоколадные торты, пытаясь сорвать фестиваль и оставить жителей без угощений.<br><br>
+                        Но есть шанс вернуть <a href="#">людям</a> праздник! <span style="color: #FF8543">Отправляйтесь на охоту</span> для сбора шоколада, используйте собранные сладости в кузне создания для приготовления тортиков. <strong>По слухам: если потратить торты у кузнецов, они отблагодарят знаками для коллекций!</strong><br><br>
+                        И не забудьте заглянуть в кузню: там уже ждёт множество ценных предметов и припасов.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__head">
+                    <p class="accordion__title fw-600">Как поиграть с MAC?</p>
+                    <img src="assets/img/angle-down.svg" alt="">
+                  </div>
+                  <div class="accordion__content">
+                    <div class="default-content">
+                      <p class="hint3">
+                        В Эльморадене начинается Фестиваль Тортиков, но праздник оказался под угрозой. Бездушные монстры растащили шоколадные торты, пытаясь сорвать фестиваль и оставить жителей без угощений.<br><br>
+                        Но есть шанс вернуть <a href="#">людям</a> праздник! <span style="color: #FF8543">Отправляйтесь на охоту</span> для сбора шоколада, используйте собранные сладости в кузне создания для приготовления тортиков. <strong>По слухам: если потратить торты у кузнецов, они отблагодарят знаками для коллекций!</strong><br><br>
+                        И не забудьте заглянуть в кузню: там уже ждёт множество ценных предметов и припасов.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__head">
+                    <p class="accordion__title fw-600">Как пожертвовать из РФ?</p>
+                    <img src="assets/img/angle-down.svg" alt="">
+                  </div>
+                  <div class="accordion__content">
+                    <div class="default-content">
+                      <p class="hint3">
+                        В Эльморадене начинается Фестиваль Тортиков, но праздник оказался под угрозой. Бездушные монстры растащили шоколадные торты, пытаясь сорвать фестиваль и оставить жителей без угощений.<br><br>
+                        Но есть шанс вернуть <a href="#">людям</a> праздник! <span style="color: #FF8543">Отправляйтесь на охоту</span> для сбора шоколада, используйте собранные сладости в кузне создания для приготовления тортиков. <strong>По слухам: если потратить торты у кузнецов, они отблагодарят знаками для коллекций!</strong><br><br>
+                        И не забудьте заглянуть в кузню: там уже ждёт множество ценных предметов и припасов.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__head">
+                    <p class="accordion__title fw-600">У меня ошибка LCID?</p>
+                    <img src="assets/img/angle-down.svg" alt="">
+                  </div>
+                  <div class="accordion__content">
+                    <div class="default-content">
+                      <p class="hint3">
+                        В Эльморадене начинается Фестиваль Тортиков, но праздник оказался под угрозой. Бездушные монстры растащили шоколадные торты, пытаясь сорвать фестиваль и оставить жителей без угощений.<br><br>
+                        Но есть шанс вернуть <a href="#">людям</a> праздник! <span style="color: #FF8543">Отправляйтесь на охоту</span> для сбора шоколада, используйте собранные сладости в кузне создания для приготовления тортиков. <strong>По слухам: если потратить торты у кузнецов, они отблагодарят знаками для коллекций!</strong><br><br>
+                        И не забудьте заглянуть в кузню: там уже ждёт множество ценных предметов и припасов.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__head">
+                    <p class="accordion__title fw-600">Как поиграть с MAC?</p>
+                    <img src="assets/img/angle-down.svg" alt="">
+                  </div>
+                  <div class="accordion__content">
+                    <div class="default-content">
+                      <p class="hint3">
+                        В Эльморадене начинается Фестиваль Тортиков, но праздник оказался под угрозой. Бездушные монстры растащили шоколадные торты, пытаясь сорвать фестиваль и оставить жителей без угощений.<br><br>
+                        Но есть шанс вернуть <a href="#">людям</a> праздник! <span style="color: #FF8543">Отправляйтесь на охоту</span> для сбора шоколада, используйте собранные сладости в кузне создания для приготовления тортиков. <strong>По слухам: если потратить торты у кузнецов, они отблагодарят знаками для коллекций!</strong><br><br>
+                        И не забудьте заглянуть в кузню: там уже ждёт множество ценных предметов и припасов.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-main__left">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.svg" alt="" class="logo-img">
+        </a>
+        <p class="body-s fw-600">База знаний проекта BA-ZA.GG</p>
+        <p class="body-s hint3">© 2026 BAZA. Все товарные знаки являются собственностью их владельцев</p>
+        <div class="socials">
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc1.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc2.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc3.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc4.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc5.svg" class="svg" target="_blank" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="footer-main__mid body-s fw-600">
+        <div class="footer-main__item">
+          <p class="footer-main__title">Сообщество</p>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#">Новости и события</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Журнал событий</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Медиа</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Стримеры</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Рекрутинг</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-main__item">
+          <p class="footer-main__title">Концепция</p>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#">Vanilla</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Osaka <span class="tag">NEW</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-main__right">
+        <a href="#" class="btn btn_secondary">Кабинет</a>
+        <a href="#" class="btn btn_accent"><span>Начать играть</span></a>
+        <div class="lang dropdown">
+          <div class="lang__head btn btn_border btn_icon-left">
+            <img src="assets/img/lang.svg" alt="">
+            <span>Ru</span>
+          </div>
+          <div class="lang__content dropdown__content">
+            <a class="dropdown__item lang__item active">
+              Ru
+            </a>
+            <a class="dropdown__item lang__item">
+              En
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">Vanilla</p>
+          <span class="server-card__online body-xs">644</span>
+          <span class="server-card__status"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Классический PVP-сервер x1</p>
+        <p class="server-card__date body-xs hint-light3">365 дней</p>
+      </a>
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">Osaka</p>
+          <span class="server-card__online body-xs">868</span>
+          <span class="server-card__status"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Необычный сервер x30</p>
+        <p class="server-card__date body-xs hint-light3">114 дней</p>
+      </a>
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">New</p>
+          <span class="server-card__online body-xs">868</span>
+          <span class="server-card__status server-card__status_error"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Необычный сервер x30</p>
+        <p class="server-card__date body-xs hint-light3">114 дней</p>
+      </a>
+    </div>
+    <div class="footer-bot">
+      <p class="body-s hint2">Вся информация, размещенная на сайте, носит исключительно ознакомительный характер и не является публичной офертой.</p>
+      <a href="#" class="body-s fw-600">Правила сайта</a>
+    </div>
+  </div>
+
+  <a href="#" class="scroll-up">
+    <img src="assets/img/angle-up.svg" alt="">
+  </a>
+</footer>
+
+
+  <script src="assets/js/hystmodal.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/mask.js"></script>
+  <script src="assets/js/fancybox.umd.min.js"></script>
+  <script src="assets/js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
